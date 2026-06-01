@@ -1,0 +1,180 @@
+<svg width="1920" height="1180" viewBox="0 0 1920 1180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:34px;font-weight:800;fill:#020617}
+      .h1{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:24px;font-weight:800;fill:#020617}
+      .h2{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:17px;font-weight:700;fill:#0F172A}
+      .body{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:13px;font-weight:500;fill:#334155}
+      .small{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:11px;font-weight:500;fill:#64748B}
+      .tiny{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:9px;font-weight:600;fill:#64748B}
+      .price{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:21px;font-weight:800;fill:#DC2626}
+      .white{fill:#FFFFFF}
+      .muted{fill:#F8FAFC}
+      .line{stroke:#E2E8F0;stroke-width:1}
+    </style>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1180" fill="#EEF3F8"/>
+
+  <text x="72" y="74" class="title">AI 智能比价助手 UI Redesign</text>
+  <text x="72" y="106" class="body">Design system generated with ui-ux-pro-max. Flat, touch-first, professional ecommerce assistant experience.</text>
+
+  <rect x="72" y="132" width="1776" height="112" rx="20" fill="#FFFFFF"/>
+  <text x="104" y="168" class="h2">Design Tokens</text>
+  <g transform="translate(104 188)">
+    <rect width="116" height="32" rx="8" fill="#0F172A"/><text x="132" y="21" class="small">Primary #0F172A</text>
+    <rect x="282" width="116" height="32" rx="8" fill="#0369A1"/><text x="414" y="21" class="small">Accent #0369A1</text>
+    <rect x="564" width="116" height="32" rx="8" fill="#0D9488"/><text x="696" y="21" class="small">Trust #0D9488</text>
+    <rect x="846" width="116" height="32" rx="8" fill="#DC2626"/><text x="978" y="21" class="small">Price #DC2626</text>
+    <rect x="1128" width="116" height="32" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/><text x="1260" y="21" class="small">Surface #F8FAFC</text>
+    <text x="1480" y="21" class="small">Typography: Rubik / Nunito Sans style, Flutter fallback: system sans</text>
+  </g>
+
+  <!-- Phone 1 Home -->
+  <g transform="translate(72 292)" filter="url(#softShadow)">
+    <rect width="390" height="844" rx="38" fill="#0F172A"/>
+    <rect x="10" y="10" width="370" height="824" rx="30" fill="#F8FAFC"/>
+    <rect x="10" y="10" width="370" height="142" rx="30" fill="#0F172A"/>
+    <text x="28" y="58" class="white" style="font-family:Arial,'Microsoft YaHei';font-size:24px;font-weight:800">AI 智能比价</text>
+    <text x="28" y="84" fill="#CBD5E1" style="font-family:Arial,'Microsoft YaHei';font-size:12px">拍照、链接、关键词，一次找低价可信商品</text>
+    <rect x="28" y="108" width="334" height="48" rx="16" fill="#FFFFFF"/>
+    <circle cx="52" cy="132" r="8" stroke="#0369A1" stroke-width="3"/>
+    <text x="72" y="137" class="small">搜索商品名称、品牌或型号</text>
+
+    <rect x="28" y="176" width="334" height="142" rx="20" fill="#0369A1"/>
+    <text x="52" y="216" fill="#FFFFFF" style="font-family:Arial,'Microsoft YaHei';font-size:22px;font-weight:800">拍照识图比价</text>
+    <text x="52" y="244" fill="#DBEAFE" style="font-family:Arial,'Microsoft YaHei';font-size:13px">上传商品图，AI 自动识别并找同款</text>
+    <rect x="52" y="266" width="108" height="34" rx="17" fill="#FFFFFF"/>
+    <text x="78" y="288" fill="#0369A1" style="font-family:Arial,'Microsoft YaHei';font-size:13px;font-weight:700">开始识别</text>
+    <rect x="274" y="204" width="58" height="58" rx="18" fill="#0F172A" opacity="0.28"/>
+    <path d="M288 236l14-18 14 18 8-10 12 20h-56l8-10z" fill="#FFFFFF"/>
+
+    <rect x="28" y="342" width="158" height="116" rx="18" fill="#FFFFFF"/>
+    <rect x="50" y="366" width="42" height="42" rx="12" fill="#DCFCE7"/>
+    <text x="104" y="390" class="h2">链接比价</text>
+    <text x="50" y="430" class="small">粘贴商品链接</text>
+    <rect x="204" y="342" width="158" height="116" rx="18" fill="#FFFFFF"/>
+    <rect x="226" y="366" width="42" height="42" rx="12" fill="#FEF3C7"/>
+    <text x="280" y="390" class="h2">关键词</text>
+    <text x="226" y="430" class="small">按型号找同款</text>
+
+    <text x="28" y="502" class="h2">今日推荐工作流</text>
+    <rect x="28" y="522" width="334" height="74" rx="18" fill="#FFFFFF"/>
+    <circle cx="58" cy="559" r="16" fill="#0D9488"/>
+    <text x="84" y="552" class="body">先识别商品主体，再召回同款</text>
+    <text x="84" y="574" class="small">减少无效商品，提升比价可信度</text>
+    <rect x="28" y="608" width="334" height="74" rx="18" fill="#FFFFFF"/>
+    <circle cx="58" cy="645" r="16" fill="#0369A1"/>
+    <text x="84" y="638" class="body">价格、销量、可信度综合排序</text>
+    <text x="84" y="660" class="small">默认优先展示低价且靠谱的店铺</text>
+
+    <rect x="10" y="766" width="370" height="68" rx="0" fill="#FFFFFF"/>
+    <text x="48" y="805" fill="#0369A1" style="font-family:Arial;font-size:11px;font-weight:800">首页</text>
+    <text x="128" y="805" class="tiny">历史</text>
+    <text x="212" y="805" class="tiny">AI客服</text>
+    <text x="306" y="805" class="tiny">我的</text>
+  </g>
+
+  <!-- Phone 2 Compare -->
+  <g transform="translate(522 292)" filter="url(#softShadow)">
+    <rect width="390" height="844" rx="38" fill="#0F172A"/>
+    <rect x="10" y="10" width="370" height="824" rx="30" fill="#F8FAFC"/>
+    <rect x="10" y="10" width="370" height="88" rx="30" fill="#FFFFFF"/>
+    <text x="142" y="62" class="h1">比价结果</text>
+    <text x="30" y="62" class="h2">‹</text>
+
+    <rect x="28" y="122" width="334" height="96" rx="20" fill="#FFFFFF"/>
+    <rect x="48" y="144" width="52" height="52" rx="16" fill="#E0F2FE"/>
+    <text x="116" y="160" class="h2">Apple iPhone 16 256G</text>
+    <text x="116" y="184" class="small">已识别：手机 / Apple / 256G</text>
+    <rect x="270" y="176" width="72" height="24" rx="12" fill="#DCFCE7"/>
+    <text x="286" y="192" fill="#047857" style="font-family:Arial,'Microsoft YaHei';font-size:11px;font-weight:700">可信</text>
+
+    <rect x="28" y="238" width="334" height="118" rx="20" fill="#0F172A"/>
+    <text x="52" y="274" fill="#FFFFFF" style="font-family:Arial,'Microsoft YaHei';font-size:19px;font-weight:800">建议优先入手低价可信店铺</text>
+    <text x="52" y="304" fill="#CBD5E1" style="font-family:Arial,'Microsoft YaHei';font-size:12px">同款价格区间 ¥4899-¥5599，当前最低价偏低。</text>
+    <rect x="52" y="322" width="90" height="22" rx="11" fill="#0369A1"/>
+    <text x="69" y="337" fill="#FFFFFF" style="font-family:Arial,'Microsoft YaHei';font-size:10px;font-weight:700">AI 分析</text>
+
+    <rect x="28" y="374" width="334" height="82" rx="18" fill="#FFFFFF"/>
+    <text x="50" y="402" class="small">30 天价格趋势</text>
+    <polyline points="52,438 92,426 132,432 172,412 212,418 252,398 322,388" fill="none" stroke="#0369A1" stroke-width="4" stroke-linecap="round"/>
+
+    <text x="28" y="494" class="h2">全网同款</text>
+    <g transform="translate(28 512)">
+      <rect width="334" height="96" rx="18" fill="#FFFFFF"/>
+      <rect x="16" y="18" width="60" height="60" rx="14" fill="#E2E8F0"/>
+      <text x="92" y="36" class="body">京东自营 iPhone 16 256G</text>
+      <text x="92" y="58" class="small">销量 2.4万｜高可信 88</text>
+      <text x="248" y="54" class="price">¥4899</text>
+    </g>
+    <g transform="translate(28 620)">
+      <rect width="334" height="96" rx="18" fill="#FFFFFF"/>
+      <rect x="16" y="18" width="60" height="60" rx="14" fill="#E2E8F0"/>
+      <text x="92" y="36" class="body">天猫旗舰店 iPhone 16</text>
+      <text x="92" y="58" class="small">销量 1.1万｜高可信 84</text>
+      <text x="248" y="54" class="price">¥4999</text>
+    </g>
+  </g>
+
+  <!-- Phone 3 Agent -->
+  <g transform="translate(972 292)" filter="url(#softShadow)">
+    <rect width="390" height="844" rx="38" fill="#0F172A"/>
+    <rect x="10" y="10" width="370" height="824" rx="30" fill="#F8FAFC"/>
+    <rect x="10" y="10" width="370" height="88" rx="30" fill="#FFFFFF"/>
+    <text x="150" y="62" class="h1">AI 客服</text>
+    <rect x="28" y="122" width="268" height="72" rx="18" fill="#FFFFFF"/>
+    <text x="48" y="150" class="body">你好，我可以帮你比价、解释建议，</text>
+    <text x="48" y="172" class="body">也能看图识别商品。</text>
+    <rect x="94" y="216" width="268" height="58" rx="18" fill="#0369A1"/>
+    <text x="116" y="250" fill="#FFFFFF" style="font-family:Arial,'Microsoft YaHei';font-size:13px">帮我看看这张图值不值得买</text>
+    <rect x="28" y="296" width="268" height="110" rx="18" fill="#FFFFFF"/>
+    <text x="48" y="324" class="body">我识别到：iPhone 16 256G。</text>
+    <text x="48" y="348" class="body">最低价 ¥4899，可信店铺 2 家。</text>
+    <text x="48" y="374" class="small">建议：价格处于偏低区间，可优先看自营。</text>
+    <g transform="translate(28 438)">
+      <rect width="334" height="78" rx="18" fill="#FFFFFF"/>
+      <text x="20" y="30" class="h2">客服工具调用</text>
+      <text x="20" y="54" class="small">图片识别 → 关键词比价 → 价格分析 → 购买建议</text>
+    </g>
+    <rect x="10" y="746" width="370" height="88" fill="#FFFFFF"/>
+    <rect x="28" y="766" width="42" height="46" rx="14" fill="#E2E8F0"/>
+    <text x="42" y="795" class="body">图</text>
+    <rect x="82" y="766" width="218" height="46" rx="16" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="104" y="794" class="small">问商品、价格、历史或运行问题</text>
+    <rect x="312" y="766" width="46" height="46" rx="16" fill="#0369A1"/>
+    <text x="328" y="795" fill="#FFFFFF" style="font-family:Arial;font-size:14px;font-weight:800">发</text>
+  </g>
+
+  <!-- Phone 4 History/Profile -->
+  <g transform="translate(1422 292)" filter="url(#softShadow)">
+    <rect width="390" height="844" rx="38" fill="#0F172A"/>
+    <rect x="10" y="10" width="370" height="824" rx="30" fill="#F8FAFC"/>
+    <rect x="10" y="10" width="370" height="88" rx="30" fill="#FFFFFF"/>
+    <text x="142" y="62" class="h1">比价历史</text>
+    <rect x="28" y="120" width="334" height="82" rx="18" fill="#FFFFFF"/>
+    <rect x="48" y="146" width="32" height="32" rx="10" fill="#E0F2FE"/>
+    <text x="94" y="150" class="body">iPhone 16 256G</text>
+    <text x="94" y="174" class="small">图片比价｜2小时前</text>
+    <text x="304" y="166" class="h2">›</text>
+    <rect x="28" y="214" width="334" height="82" rx="18" fill="#FFFFFF"/>
+    <rect x="48" y="240" width="32" height="32" rx="10" fill="#FEF3C7"/>
+    <text x="94" y="244" class="body">Sony WH-1000XM5</text>
+    <text x="94" y="268" class="small">关键词搜索｜昨天</text>
+    <text x="304" y="260" class="h2">›</text>
+    <rect x="28" y="328" width="334" height="128" rx="20" fill="#0F172A"/>
+    <text x="52" y="366" fill="#FFFFFF" style="font-family:Arial,'Microsoft YaHei';font-size:20px;font-weight:800">本月帮你省钱</text>
+    <text x="52" y="412" fill="#FFFFFF" style="font-family:Arial,'Microsoft YaHei';font-size:34px;font-weight:900">¥728</text>
+    <text x="190" y="412" fill="#CBD5E1" style="font-family:Arial,'Microsoft YaHei';font-size:12px">基于最低可信价估算</text>
+    <text x="28" y="504" class="h2">体验规则</text>
+    <rect x="28" y="524" width="334" height="70" rx="18" fill="#FFFFFF"/>
+    <text x="50" y="552" class="body">空状态必须给下一步行动</text>
+    <text x="50" y="574" class="small">不会再出现白屏或无反馈等待</text>
+    <rect x="28" y="606" width="334" height="70" rx="18" fill="#FFFFFF"/>
+    <text x="50" y="634" class="body">移动端优先，返回行为可预期</text>
+    <text x="50" y="656" class="small">浏览器返回、App 返回都不丢状态</text>
+  </g>
+</svg>

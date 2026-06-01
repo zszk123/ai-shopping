@@ -1,0 +1,144 @@
+﻿# =========================
+# Secrets / local config
+# =========================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+android/local.properties
+**/android/local.properties
+
+# =========================
+# Python / backend
+# =========================
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+.venv/
+venv/
+ENV/
+env/
+
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Local/generated backend files
+*.log
+logs/
+test_*.jpg
+test_*.png
+check_milvus_count.py
+import_to_milvus.py
+seed_data.py
+
+# =========================
+# Flutter / Dart / frontend
+# =========================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+pubspec.lock.backup
+
+build/
+**/build/
+coverage/
+**/coverage/
+
+# Flutter generated docs
+doc/api/
+**/doc/api/
+
+# Android build output
+android/app/debug/
+android/app/profile/
+android/app/release/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+
+# iOS / macOS generated files
+ios/Pods/
+ios/Flutter/.last_build_id
+ios/Flutter/ephemeral/
+macos/Pods/
+macos/Flutter/ephemeral/
+**/ios/Pods/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/ephemeral/
+**/macos/Pods/
+**/macos/Flutter/ephemeral/
+
+# Desktop generated files
+linux/flutter/ephemeral/
+windows/flutter/ephemeral/
+**/linux/flutter/ephemeral/
+**/windows/flutter/ephemeral/
+
+# Generated plugin symlinks
+.plugin_symlinks/
+**/.plugin_symlinks/
+
+# Flutter symbolication / obfuscation
+app.*.symbols
+app.*.map.json
+
+# =========================
+# Android / Gradle
+# =========================
+.gradle/
+.gradle-cache/
+**/.gradle/
+**/.gradle-cache/
+
+# =========================
+# Node / web tooling
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# IDE / editor
+# =========================
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+.history/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Temporary runtime copies
+# =========================
+ai-shoping-flutter-run/
+ai-shopping-flutter-run/
+frontend-run/
+flutter_phone_run.out.log
+flutter_phone_run.err.log
+

@@ -1,0 +1,133 @@
+<svg width="1920" height="1180" viewBox="0 0 1920 1180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:34px;font-weight:800;fill:#020617}
+      .sub{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:14px;font-weight:500;fill:#64748B}
+      .h1{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:24px;font-weight:800;fill:#020617}
+      .h2{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:17px;font-weight:700;fill:#0F172A}
+      .body{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:13px;font-weight:500;fill:#334155}
+      .small{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:11px;font-weight:500;fill:#64748B}
+      .btn{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:13px;font-weight:800;fill:#FFFFFF}
+      .outline{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:13px;font-weight:700;fill:#0369A1}
+    </style>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="1920" height="1180" fill="#EEF3F8"/>
+  <text x="72" y="74" class="title">AI 比价失败 / 空状态恢复路径设计</text>
+  <text x="72" y="106" class="sub">Rule: failure is not the end. Every failure state must explain what happened and offer at least two recovery actions.</text>
+
+  <!-- Shared rules -->
+  <rect x="72" y="132" width="1776" height="112" rx="20" fill="#FFFFFF"/>
+  <text x="104" y="168" class="h2">Failure UX Rules</text>
+  <text x="104" y="198" class="body">1. 先说人话原因：图片太模糊 / AI 服务不可用 / 后端连接失败 / 未找到同款。</text>
+  <text x="610" y="198" class="body">2. 主按钮给最优恢复路径：重新上传、重试、登录、返回首页。</text>
+  <text x="1098" y="198" class="body">3. 次按钮给替代路径：关键词比价、链接比价、联系客服。</text>
+
+  <!-- Phone 1 Image failure -->
+  <g transform="translate(72 292)" filter="url(#softShadow)">
+    <rect width="390" height="844" rx="38" fill="#0F172A"/>
+    <rect x="10" y="10" width="370" height="824" rx="30" fill="#F8FAFC"/>
+    <rect x="10" y="10" width="370" height="88" rx="30" fill="#FFFFFF"/>
+    <text x="138" y="62" class="h1">图片比价失败</text>
+    <text x="30" y="62" class="h2">‹</text>
+    <circle cx="195" cy="190" r="54" fill="#FEE2E2"/>
+    <path d="M168 204l18-36 19 25 11-13 18 24h-66z" fill="#DC2626"/>
+    <circle cx="230" cy="158" r="7" fill="#DC2626"/>
+    <text x="72" y="288" class="h1">没有识别到有效商品</text>
+    <text x="58" y="322" class="body">可能是图片模糊、主体太小、截图信息不完整，</text>
+    <text x="88" y="344" class="body">或当前图片不是商品图。</text>
+    <rect x="42" y="382" width="306" height="54" rx="18" fill="#0369A1"/>
+    <text x="130" y="416" class="btn">重新上传图片</text>
+    <rect x="42" y="452" width="146" height="48" rx="16" fill="#FFFFFF" stroke="#0369A1"/>
+    <text x="82" y="482" class="outline">关键词比价</text>
+    <rect x="202" y="452" width="146" height="48" rx="16" fill="#FFFFFF" stroke="#0369A1"/>
+    <text x="248" y="482" class="outline">链接比价</text>
+    <rect x="42" y="538" width="306" height="120" rx="20" fill="#FFFFFF"/>
+    <text x="66" y="574" class="h2">上传建议</text>
+    <text x="66" y="604" class="small">• 商品主体占画面 60% 以上</text>
+    <text x="66" y="630" class="small">• 避免反光、遮挡、过暗</text>
+    <text x="66" y="656" class="small">• 截图尽量包含商品标题或型号</text>
+  </g>
+
+  <!-- Phone 2 AI service failure -->
+  <g transform="translate(522 292)" filter="url(#softShadow)">
+    <rect width="390" height="844" rx="38" fill="#0F172A"/>
+    <rect x="10" y="10" width="370" height="824" rx="30" fill="#F8FAFC"/>
+    <rect x="10" y="10" width="370" height="88" rx="30" fill="#FFFFFF"/>
+    <text x="130" y="62" class="h1">AI 服务异常</text>
+    <circle cx="195" cy="190" r="54" fill="#FEF3C7"/>
+    <path d="M195 150l48 84h-96l48-84z" fill="#F59E0B"/>
+    <rect x="190" y="178" width="10" height="34" rx="5" fill="#FFFFFF"/>
+    <circle cx="195" cy="222" r="5" fill="#FFFFFF"/>
+    <text x="72" y="288" class="h1">AI 识图暂时不可用</text>
+    <text x="62" y="322" class="body">可能是模型权限、服务限流或网络波动。</text>
+    <text x="76" y="344" class="body">你可以先用文字方式继续比价。</text>
+    <rect x="42" y="382" width="306" height="54" rx="18" fill="#0369A1"/>
+    <text x="144" y="416" class="btn">再次重试</text>
+    <rect x="42" y="452" width="306" height="50" rx="16" fill="#FFFFFF" stroke="#0369A1"/>
+    <text x="128" y="483" class="outline">改用关键词比价</text>
+    <rect x="42" y="516" width="306" height="50" rx="16" fill="#FFFFFF" stroke="#0369A1"/>
+    <text x="136" y="547" class="outline">粘贴商品链接</text>
+    <rect x="42" y="612" width="306" height="86" rx="20" fill="#FFFFFF"/>
+    <text x="66" y="646" class="h2">给开发者看的错误</text>
+    <text x="66" y="674" class="small">DashScope AccessDenied / Timeout / 429</text>
+  </g>
+
+  <!-- Phone 3 Backend/network failure -->
+  <g transform="translate(972 292)" filter="url(#softShadow)">
+    <rect width="390" height="844" rx="38" fill="#0F172A"/>
+    <rect x="10" y="10" width="370" height="824" rx="30" fill="#F8FAFC"/>
+    <rect x="10" y="10" width="370" height="88" rx="30" fill="#FFFFFF"/>
+    <text x="130" y="62" class="h1">连接失败</text>
+    <circle cx="195" cy="190" r="54" fill="#E0F2FE"/>
+    <path d="M154 196c24-28 58-28 82 0" stroke="#0369A1" stroke-width="10" stroke-linecap="round"/>
+    <path d="M176 216c12-13 26-13 38 0" stroke="#0369A1" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="195" cy="236" r="7" fill="#0369A1"/>
+    <text x="66" y="288" class="h1">暂时连不上后端服务</text>
+    <text x="60" y="322" class="body">请确认后端已启动，并且 readyz 状态正常。</text>
+    <rect x="42" y="382" width="306" height="54" rx="18" fill="#0369A1"/>
+    <text x="156" y="416" class="btn">重新连接</text>
+    <rect x="42" y="452" width="306" height="50" rx="16" fill="#FFFFFF" stroke="#0369A1"/>
+    <text x="122" y="483" class="outline">查看排查指南</text>
+    <rect x="42" y="536" width="306" height="128" rx="20" fill="#FFFFFF"/>
+    <text x="66" y="570" class="h2">检查顺序</text>
+    <text x="66" y="600" class="small">1. http://127.0.0.1:8000/readyz</text>
+    <text x="66" y="626" class="small">2. database / redis / milvus 是否 true</text>
+    <text x="66" y="652" class="small">3. 前端 API_BASE_URL 是否指向 8000</text>
+  </g>
+
+  <!-- Phone 4 Empty result -->
+  <g transform="translate(1422 292)" filter="url(#softShadow)">
+    <rect width="390" height="844" rx="38" fill="#0F172A"/>
+    <rect x="10" y="10" width="370" height="824" rx="30" fill="#F8FAFC"/>
+    <rect x="10" y="10" width="370" height="88" rx="30" fill="#FFFFFF"/>
+    <text x="130" y="62" class="h1">没有同款</text>
+    <circle cx="195" cy="190" r="54" fill="#ECFDF5"/>
+    <circle cx="184" cy="184" r="24" stroke="#0D9488" stroke-width="9"/>
+    <path d="M204 204l25 25" stroke="#0D9488" stroke-width="9" stroke-linecap="round"/>
+    <text x="72" y="288" class="h1">暂未找到同款商品</text>
+    <text x="58" y="322" class="body">识别成功了，但商品库里没有足够相似的</text>
+    <text x="104" y="344" class="body">在售商品。</text>
+    <rect x="42" y="382" width="306" height="54" rx="18" fill="#0369A1"/>
+    <text x="122" y="416" class="btn">补充品牌型号搜索</text>
+    <rect x="42" y="452" width="146" height="48" rx="16" fill="#FFFFFF" stroke="#0369A1"/>
+    <text x="74" y="482" class="outline">换张图片</text>
+    <rect x="202" y="452" width="146" height="48" rx="16" fill="#FFFFFF" stroke="#0369A1"/>
+    <text x="242" y="482" class="outline">链接比价</text>
+    <rect x="42" y="548" width="306" height="118" rx="20" fill="#FFFFFF"/>
+    <text x="66" y="584" class="h2">推荐关键词</text>
+    <rect x="66" y="604" width="86" height="28" rx="14" fill="#E0F2FE"/>
+    <text x="82" y="623" class="small">品牌 + 型号</text>
+    <rect x="162" y="604" width="72" height="28" rx="14" fill="#E0F2FE"/>
+    <text x="180" y="623" class="small">容量</text>
+    <rect x="244" y="604" width="72" height="28" rx="14" fill="#E0F2FE"/>
+    <text x="262" y="623" class="small">颜色</text>
+  </g>
+
+  <!-- Login expired / permission inline state -->
+  <rect x="72" y="1056" width="1776" height="72" rx="20" fill="#FFFFFF"/>
+  <text x="104" y="1090" class="h2">补充状态：登录失效 / 无权限</text>
+  <text x="312" y="1090" class="body">所有核心功能都需要登录。如果 401，应展示“登录后继续使用”，主按钮“去登录”，次按钮“重新登录/找回密码”。</text>
+</svg>
